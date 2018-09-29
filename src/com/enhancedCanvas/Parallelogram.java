@@ -2,9 +2,6 @@ package com.enhancedCanvas;
 
 class Parallelogram extends Shape {
 
-//    int x, y, length, height;
-//    boolean isLeft;
-
     /**
      * Creates a Parallelogram object that merely stores the parameters passed to it.
      * @param x             the x-coordinate to start from.

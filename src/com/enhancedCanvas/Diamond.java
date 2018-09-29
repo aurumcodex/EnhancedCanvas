@@ -2,8 +2,6 @@ package com.enhancedCanvas;
 
 class Diamond extends Shape {
 
-//    int x, y, length;
-
     /**
      * Creates a Diamond object that merely stores the parameters passed to it.
      * @param x             the x-coordinate to start from.

@@ -2,8 +2,6 @@ package com.enhancedCanvas;
 
 class Circle extends Shape {
 
-//    int x, y, radius;
-
     /**
      * Creates a Circle object that merely stores the parameters passed to it.
      * @param x             the x-coordinate to start from.

@@ -2,8 +2,6 @@ package com.enhancedCanvas;
 
 class Rectangle extends Shape {
 
-//    int x, y, x_width, y_width;
-
     /**
      * Creates a Rectangle object that merely stores the parameters passed to it.
      * @param x             the x-coordinate to start from.

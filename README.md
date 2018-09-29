@@ -23,13 +23,4 @@ Other personal additions will be added as I think of other shapes that I'd like 
 - [ ] Implement hexagons, both horizontal and vertical
 
 ## Showcase
-Base Chart
-![Default Image](images/flowchart.PNG)
-
-When mouse is over display:
-![MouseEntered](images/flowchart_mouseenter.PNG)
-
-When a rectangle is clicked:
-![Rectangle Clicked](images/rectangle_clicked.PNG)
-
-And so on.
+![Sequence of the Flowchart](images/flowchart.gif)
