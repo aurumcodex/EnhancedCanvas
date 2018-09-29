@@ -25,16 +25,17 @@ public class Main extends SimpleDrawing {
     private static ArrayList<Shape> shapes = new ArrayList<>();
     private static Main  main              = new Main();
     private static Color default_fore      = new Color(158, 255, 255);
-    private static Color default_back      = new Color(2, 52, 68);
-    private static Color alt_back          = new Color(17, 29, 19);
+    private static Color default_back      = new Color( 17,  29,  19);
+    private static Color alt_back          = new Color( 37,  49,  39);
     private static Color cloud_grey        = new Color(200, 200, 200);
-    private static Color cinnabar          = new Color(227, 66, 52);
-    private static Color fire_orange       = new Color(230, 115, 0);
-    private static Color goldenrod         = new Color(218, 165, 32);
-    private static Color chartreuse        = new Color(161, 194, 0);
+    private static Color cinnabar          = new Color(227,  66,  52);
+    private static Color fire_orange       = new Color(230, 115,   0);
+    private static Color goldenrod         = new Color(218, 165,  32);
+    private static Color chartreuse        = new Color(161, 194,   0);
     private static Color xanadu            = new Color(112, 151, 117);
-    private static Color celadon           = new Color(0, 123, 167);
-    private static Color violet            = new Color(123, 1, 167);
+    private static Color verdigris         = new Color( 86, 171, 183);
+    private static Color cerulean          = new Color(  0, 123, 167);
+    private static Color violet            = new Color(123,   1, 167);
 
     public static void main(String[] args) {
 
@@ -553,7 +554,7 @@ public class Main extends SimpleDrawing {
                     temp.isVisible = false;
                     main.createRectangle(temp);
                     main.setForegroundColor(cinnabar);
-                    main.setBackgroundColor(alt_back);
+//                    main.setBackgroundColor(alt_back);
                 }
             }// instanceof Rectangle
             if (s instanceof Circle) {
@@ -561,6 +562,7 @@ public class Main extends SimpleDrawing {
                     Circle temp = (Circle) s;
                     temp.isVisible = false;
                     main.createCircle(temp);
+                    main.setForegroundColor(xanadu);
                 }
             }// instanceof Circle
             if (s instanceof Diamond) {
@@ -568,6 +570,7 @@ public class Main extends SimpleDrawing {
                     Diamond temp = (Diamond) s;
                     temp.isVisible = false;
                     main.createDiamond(temp);
+                    main.setForegroundColor(cerulean);
                 }
             }// instanceof Diamond
             if (s instanceof Parallelogram) {
@@ -575,6 +578,7 @@ public class Main extends SimpleDrawing {
                     Parallelogram temp = (Parallelogram) s;
                     temp.isVisible = false;
                     main.createParallelogram(temp);
+                    main.setForegroundColor(violet);
                 }
             }// instanceof Parallelogram
             if (s instanceof Triangle) {
@@ -582,6 +586,7 @@ public class Main extends SimpleDrawing {
                     Triangle temp = (Triangle) s;
                     temp.isVisible = false;
                     main.createTriangle(temp);
+                    main.setForegroundColor(chartreuse);
                 }
             }// instanceof Triangle
             if (s instanceof InvertTriangle) {
@@ -589,6 +594,7 @@ public class Main extends SimpleDrawing {
                     InvertTriangle temp = (InvertTriangle) s;
                     temp.isVisible = false;
                     main.createInvertedTriangle(temp);
+                    main.setForegroundColor(fire_orange);
                 }
             }// instanceof InvertTriangle
             if (s instanceof Trapezoid) {
@@ -596,6 +602,7 @@ public class Main extends SimpleDrawing {
                     Trapezoid temp = (Trapezoid) s;
                     temp.isVisible = false;
                     main.createTrapezoid(temp);
+                    main.setForegroundColor(goldenrod);
                 }
             }
             if (s instanceof InvertTrapezoid) {
@@ -603,28 +610,30 @@ public class Main extends SimpleDrawing {
                     InvertTrapezoid temp = (InvertTrapezoid) s;
                     temp.isVisible = false;
                     main.createInvertedTrapezoid(temp);
+                    main.setForegroundColor(verdigris);
                 }
             }
         }//for loop
     }// mouseClick function
 
     /**
-     *
-     * @param e
+     * A mouse function that alters the flowchart display's colors.
+     * @param e         the MouseEvent being listened to.
      */
     @Override
     public void mouseEntered(MouseEvent e) {
         main.setForegroundColor(cloud_grey);
+        main.setBackgroundColor(alt_back);
     }// mouseEntered function
 
     /**
-     *
-     * @param e
+     * A mouse function that reverts the flowchart display's colors.
+     * @param e         the MouseEvent being listened to.
      */
     @Override
     public void mouseExited(MouseEvent e) {
         main.setForegroundColor(default_fore);
-        main.setBackgroundColor(alt_back);
+        main.setBackgroundColor(default_back);
     }// mouseExited function
 
 }
