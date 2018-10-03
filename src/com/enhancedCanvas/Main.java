@@ -8,7 +8,7 @@
  NOTE: The display window *will* have to be resized to view all of the flowchart.
 
  CHANGELOG:
- > 1.0.0 - initial release; boxes, triangles and lines only, BW only.
+ > 1.0.0 - initial release; boxes, triangles and lines only, BW only. (from an older project)
  > 2.0.0 - revised code base to separate all different shapes, added color support.
  > 2.0.1 - reorganization of code base to simplify creating new shapes and adding more shape types in the future.
  > 2.1.0 - addition of Trapezoids and InvertTrapezoids, along with extra mouse functionality.
