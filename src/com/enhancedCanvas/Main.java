@@ -22,6 +22,7 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class Main extends SimpleDrawing {
+
     private static ArrayList<Shape> shapes = new ArrayList<>();
     private static Main  main              = new Main();
     private static Color default_fore      = new Color(158, 255, 255);
