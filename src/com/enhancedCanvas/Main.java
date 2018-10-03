@@ -262,6 +262,7 @@ public class Main extends SimpleDrawing {
      * @param length        the length of the line to be drawn.
      * @param isVertical    a flag to determine if the line is to be drawn vertically.
      */
+    @SuppressWarnings("SameParameterValue")
     private void dottedLine(int x, int y, int length, boolean isVertical) {
         if (!isVertical) {
             for (int i = 0; i < length; i += 3) {
@@ -308,6 +309,7 @@ public class Main extends SimpleDrawing {
      * @param isUp      a flag to determine if the arrow is pointing up.
      * @param isDown    a flag to determine if the arrow is pointing down.
      */
+    @SuppressWarnings("SameParameterValue")
     private void drawArrow(int x, int y, int length, boolean isLeft, boolean isUp, boolean isDown) {
         int arrow_wing_length = 12;
         if (isLeft) {
@@ -339,6 +341,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Rectangle object and turns it into a displayed shape.
      * @param rect      The source parameters of a Rectangle object.
      */
+    @SuppressWarnings("all")
     private void createRectangle(Rectangle rect) {
         int x       = rect.x;
         int y       = rect.y;
@@ -363,6 +366,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Circle object and turns it into a displayed shape.
      * @param circle    The source parameters of a Circle object
      */
+    @SuppressWarnings("all")
     private void createCircle(Circle circle) {
         int x       = circle.x;
         int y       = circle.y;
@@ -390,6 +394,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Parallelogram object and turns it into a displayed shape.
      * @param parallelogram     The source parameters of a Parallelogram object.
      */
+    @SuppressWarnings("all")
     private void createParallelogram(Parallelogram parallelogram) {
         int x           = parallelogram.x;
         int y           = parallelogram.y;
@@ -429,6 +434,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Diamond object and turns it into a displayed shape.
      * @param diamond   The source parameters of a Diamond object.
      */
+    @SuppressWarnings("all")
     private void createDiamond(Diamond diamond) {
         int x       = diamond.x;
         int y       = diamond.y;
@@ -452,6 +458,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Triangle object and turns it into a displayed shape.
      * @param triangle  The source parameters of a normal Triangle object.
      */
+    @SuppressWarnings("all")
     private void createTriangle(Triangle triangle) {
         int x       = triangle.x;
         int y       = triangle.y;
@@ -474,6 +481,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from an InvertTriangle object and turns it into a displayed shape.
      * @param triangle  The source parameters of an InvertTriangle object.
      */
+    @SuppressWarnings("all")
     private void createInvertedTriangle(InvertTriangle triangle) {
         int x = triangle.x;
         int y = triangle.y;
@@ -494,6 +502,7 @@ public class Main extends SimpleDrawing {
      * Takes the parameters from a Trapezoid object and turns it into a displayed shape.
      * @param trapezoid The source parameters of a Trapezoid object.
      */
+    @SuppressWarnings("all")
     private void createTrapezoid(Trapezoid trapezoid) {
         int x = trapezoid.x;
         int y = trapezoid.y;
@@ -517,6 +526,7 @@ public class Main extends SimpleDrawing {
      * Take the parameters from an InvertTrapezoid object and turns it into a displayed shape.
      * @param trapezoid The source parameters of an InvertTrapezoid object.
      */
+    @SuppressWarnings("all")
     private void createInvertedTrapezoid(InvertTrapezoid trapezoid) {
         int x = trapezoid.x;
         int y = trapezoid.y;
